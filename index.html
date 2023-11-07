@@ -1,46 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo Travle </title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <img src="assets/images/logo.png" alt="">
-        <ul>
-            <li><a href="">Desitnations</a></li>
-            <li><a href="">Hotels</a></li>
-            <li><a href="">Flights</a></li>
-            <li><a href="">Booking</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="" class="sign-up">Sign Up</a></li>
-            <li><a href="">Flights</a></li>
-            <select >
-                <option value="AR">Ar</option>
-                <option selected value="EN">EN</option>
-            </select>
 
-        </ul>
-    </header>
-        <section class="traval-enjoy">
-            <div class="best">
+<body>
+    <!-- header -->
+    <nav>
+        <header>
+            <img class="logo" src="assets/images/logo.png" alt="">
+            <a class="icon">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="">Desitnations</a></li>
+                <li><a href="">Hotels</a></li>
+                <li><a href="">Flights</a></li>
+                <li><a href="">Booking</a></li>
+                <li><a href="">Login</a></li>
+                <li class="sign-up"><a href="">Sign Up</a></li>
+                <li><a href="">Flights</a></li>
+                <select>
+                    <option value="AR">Ar</option>
+                    <option selected value="EN">EN</option>
+                </select>
+            </ul>
+        </header>
+    </nav>
+
+
+    <!-- Travel-Section -->
+    <div class="container-travel">
+        <div class="traval-enjoy">
+            <div class="traval">
+
                 <h4>Best Destinations around the world</h4>
                 <h1>
                     Travel, enjoy<img src="assets/images/Vector.png" alt="">
-                      and live a new <br>
+                    and live a new <br>
                     and full life
-                 </h1>
-                 <div class="parag">
-                    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-                    <p>Preferred to sportsmen it engrossed listening. Park gate</p>
-                    <p>sell they west hard for the.</p>
-                 </div>
+                </h1>
+                <div class="parag">
+                    <p>Built Wicket longer admire do barton vanity itself do in it.
+                        Preferred to sportsmen it engrossed listening. Park gate
+                        sell they west hard for the.</p>
+                </div>
+                <div class="buttons">
+                    <a>
+                        <button class="find">Find out more </button></a>
+                    <span class="playvideo">
+                        <img class="video-show" src="assets/images/play.svg" alt="">
+
+                    </span>
+                    <p class="demo">Play Demo</p>
+                </div>
             </div>
-            <div class="imgs">
-                <img src="assets/images/Image.png" alt="">
+            <div>
+                <img class="img-company" src="assets/images/Image.png" alt="">
             </div>
-        </section>
+        </div>
+    </div>
+
+    <!-- servies-section -->
+    <div class="container-servies">
+        <div class="ser">
+            <div class="servies">
+                <div class="cat">
+                    <p>CATEGORY</p>
+                    <h5>We Offer Best Servies</h5>
+                </div>
+                <img src="assets/images/shape.svg" alt="">
+            </div>
+            <div class="servies-category">
+                <div class="cardservices">
+                    <img src="assets/images//icon1.png" width="75" alt="Service" />
+                    <h4 class="">Calculated Weather</h4>
+                    <p class="">Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+                <div class="cardservices">
+                    <img src="assets/images//icon2.png" width="75" alt="Service" />
+                    <h4>Best Flights</h4>
+                    <p>Engrossed listening. Park gate sell they west hard for the.</p>
+                </div>
+                <div class="cardservices">
+                    <img src="assets/images//icon3.png" width="75" alt="Service" />
+                    <h4 class="">Local Events</h4>
+                    <p class="">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                </div>
+                <div class="cardservices">
+                    <img src="assets/images//icon4.png" width="75" alt="Service" />
+                    <h4 class="">Customization</h4>
+                    <p class="">We deliver outsourced aviation services for military customers</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- top-sellers section -->
+    <div class="top-container">
+        <div class=" top">
+            <div>
+                <h5>Top Selling </h5>
+                <h3>Top Destinations</h3>
+            </div>
+        </div>
+        <div class="topsell">
+            <div class="card-cell ">
+                <img class="" src="assets/images/dest1.jpg" />
+                <div class="data-sell">
+                    <div class="inform">
+                        <h4 class="">Rome, Italty</h4>
+                        <h4 class="">$5,42k</h4>
+                    </div>
+                    <div class="trip">
+                        <img src="assets/images/navigation.svg" style="margin-right: 14px" width="20" /><span
+                            class="">10 Days Trip</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-cell"> <img class="" src="assets/images/dest2.jpg" />
+                <div class="data-sell">
+                    <div class="inform">
+                        <h4 class="">London, Uk</h4>
+                        <h4 class="">$4,2k</h4>
+                    </div>
+                    <div class="trip">
+                        <img src="assets/images/navigation.svg" style="margin-right: 14px" width="20" /><span
+                            class="">12 Days Trip</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-cell">
+                <img src="assets/images/dest3.jpg" />
+                <div class="data-sell">
+                    <div class="inform">
+                        <h4 class="">Full Europe</h4>
+                        <h4 class="">$15k</h4>
+                    </div>
+                    <div class="trip"> <img src="assets/images/navigation.svg" style="margin-right: 14px"
+                            width="20" /><span class="">28 Days Trip</span></div>
+                </div>
+            </div>
+            <div>
+                <img class="with-shapes" src="assets/images/shape (1).svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- book section -->
+    <div class="book-container">
+        <div class="setps">
+            <div class="content">
+                <div class="easy-fast">
+                    <h5>Easy and Fast </h5>
+                    <h3>Book your next trip in 3 easy steps</h3>
+                    <div class="disc-contain">
+                        <div class="des" style="border-radius: 13px">
+                            <img src="assets/images/selection.svg" alt="steps" />
+                        </div>
+                        <div>
+                            <h5>Choose Destination</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                <br> adipisicing elit. Libero voluptatem
+                            </p>
+                        </div>
+                    </div>
+                    <div class="disc-contain">
+                        <div class=" des2" style="border-radius: 13px">
+                            <img src="assets/images/taxi.svg" alt="steps" />
+                        </div>
+                        <div>
+                            <h5>Make Payment</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                <br> adipisicing elit. Libero voluptatem
+                            </p>
+                        </div>
+                    </div>
+                    <div class="disc-contain">
+                        <div class=" des3" style="border-radius: 13px">
+                            <img src="assets/images/water-sport.svg" alt="steps" />
+                        </div>
+                        <div>
+                            <h5>Reach Airport on Selected Date</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                <br> adipisicing elit. Libero voluptatem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-trip">
+
+                    <div class="card">
+                        <img src="assets/images/booking-img.jpg" alt="">
+                        <div style="margin-left: 16px;">
+                            <h5>Trip To Greece</h5>
+                            <p>14-29 June | by Robbin joseph</p>
+                        </div>
+
+                        <div class="icon-group">
+                            <div>
+                                <img class="icon-card" src="assets/icons/leaf.svg" alt="">
+                            </div>
+                            <div>
+                                <img class="icon-card" src="assets/icons/map.svg" alt="">
+                            </div>
+                            <div>
+                                <img class="icon-card" src="assets/icons/send.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="footer-card">
+                            <img class="icon-card" src="assets/icons/building.svg" alt="">
+                            <div>
+                                <h6>24 people going</h6>
+                                <img class="heart" src="assets/icons/heart.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <img src="assets/images/bg.png">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="js/index.js"></script>
+
 </html>
