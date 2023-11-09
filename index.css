@@ -11,25 +11,29 @@ ul {
 }
 
 header {
+    padding: 20px;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    width: 85%;
-    padding: 30px;
+    width: 100%;
     margin: auto;
-    transition: background-color 0.4s ease-out;
 
 }
-header.scroll {
-    background-color: rgba(249, 250, 253, 0.52);
-    width: 100%;
-   justify-content: space-around;
 
-  }
+header.scroll {
+    padding: 20px;
+    background-color: #F1A501;
+    width: 100%;
+    transform: translate(0, 0);
+    display: flex;
+    justify-content: space-around;
+
+}
+
 ul li {
     list-style-type: none;
     cursor: pointer;
@@ -50,16 +54,18 @@ ul li a {
     border-radius: 4px;
     text-align: center;
     border: 1px solid #000;
-  
+
 }
 
 ul select {
     border: none;
     background-color: rgba(0, 0, 0, 0);
 }
-ul li a:hover{
-    color: #F1A501;
+
+ul li a:hover {
+    color: #DF6951;
 }
+
 .sign-up:hover {
     cursor: pointer;
     background-color: #F1A501;
@@ -77,51 +83,139 @@ ul li a:hover{
     .icon {
         display: block;
     }
-    *{
+
+    * {
         font-size: 12px;
     }
-  
+
     .servies img {
         display: none;
     }
+
     .traval h1>img {
-        display: none;}
+        display: none;
+    }
 
+    .container-travel >.traval-enjoy,
+     .container-servies >.ser>.servies-category,
+     .top-container > .topsell,
+     .book-container >.setps >.content,.footer{
+        display: block;
+        /* width: 100%; */
+    }
+    .container-servies >.ser>.servies-category> .cardservices{
+        width: 100%;
+        height: 165px;
+    }
+  
+    .container-servies,.top-container{
+        position: relative;
+        left: 25%;
+    }
+    .card-cell{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .book-container >.setps{
+        width: 100%;
+    }
+    .book-container{
+        position: relative;
+        left: 35%;
+    }
+    .with-shapes {
+        display: none;
+    }
 
+    .topsell {
+        display: block;
+    }
+
+    .easy-fast {
+        margin: auto;
+    }
+
+    .book-container >.setps >.content >.card-trip {
+        margin-left: -24%;
+        margin-top: 35px;
+    }
+    .book-container >.setps >.content >.card-trip>img {
+        display: none;
+    }
+    .container-people >.about-us{
+        display: block;
+        margin: 35%;
+    }
+    .container-people >.about-us .card2, .container-people >.about-us .card3{
+        position: relative;
+        right: 0;
+        left: 7%;
+        top: 14px;
+        z-index: 1;
+    }
+    .container-people >.about-us >.updown
+    {
+        display: none;
+    }
+    .container-company >.content-images{
+        display: grid
+    }
+    .container-company >.content-images >img{
+            margin: 17px;
+    position: relative;
+    right: 0;
+    left: 45%;
+    z-index: 1;
+    }
+    .container-email> .send{
+        display: none;
+    }
+    .container-email > .subs{
+        width: 100%;
+        display: block;
+    }
+
+    .container-email{
+            position: relative;
+    left: 25%;
+    }
+    
 }
-
 .container {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-  }
+}
 
 
 .traval-enjoy {
     display: flex;
     justify-content: space-between;
-  width: 85%;
-  margin: auto;
+    width: 90%;
+    margin: auto;
 
 }
-.container-travel{
+
+.container-travel {
     background-size: cover;
     background-image: url(assets/images/hero-bg.svg);
     background-color: transparent;
@@ -129,14 +223,22 @@ ul li a:hover{
     top: 100px;
 
 }
-.img-company {
-    height: 100%;
-    transition: transform  2s;
-}
-.img-company:hover{
-    
-    transform: translateX(-25%)
 
+.card-cell>img:hover{
+    transform: scale(1.3);
+    transition: all 1.2s ease-in;
+}
+.img-company {
+    transition: transform 2s;
+}
+.container-servies,.top-container,.book-container{
+    width: 90%;
+    margin: auto;
+    /* height: 550px; */
+}
+.img-company:hover {
+
+    transform: translateX(-25%)
 }
 
 .traval h4 {
@@ -148,7 +250,7 @@ ul li a:hover{
 .traval h1 {
     font-weight: 700;
     color: #181E4B;
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     line-height: 4.5rem;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -157,13 +259,13 @@ ul li a:hover{
 .traval {
     padding: 30px;
     margin-top: 50px;
-  
+
 }
 
 .traval h1>img {
     position: absolute;
-    top: 37%;
-    left: 24%;
+    top: 35%;
+    left: 25%;
     z-index: -1;
 }
 
@@ -172,7 +274,9 @@ ul li a:hover{
     color: #5E6282;
     font-size: 15px;
 }
-
+.icon-grou >img:hover{
+    cursor: pointer;
+}
 .parag {
 
     width: 77%;
@@ -195,11 +299,13 @@ ul li a:hover{
     text-align: center;
 
 }
-.find:hover{
+
+.find:hover {
     background-color: #DF6951;
     cursor: pointer;
     border: none;
 }
+
 .buttons .playvideo {
     margin: 10px;
     border-radius: 50%;
@@ -210,7 +316,7 @@ ul li a:hover{
 
 }
 
-.video-show{
+.video-show {
     margin: 20px
 }
 
@@ -219,26 +325,30 @@ ul li a:hover{
     font-size: 22px;
     font-weight: 500;
     margin-top: 20px;
-    transition: transform  2s;
-    
+    transition: transform 2s;
+
 
 }
-.video-show:hover ,.demo:hover{
+
+.video-show:hover, .demo:hover {
     color: #F1A501;
     cursor: pointer;
-    transform: translate(50%,0);
+    transform: translate(50%, 0);
 }
-.top-container{
+
+.top-container {
     width: 85%;
     margin: auto;
 }
-.ser{
-  
-  margin: auto;
- 
+
+.ser {
+
+    margin: auto;
+
 }
+
 .servies {
-    
+
     text-align: center;
     line-height: 0.01rem;
     display: flex;
@@ -246,10 +356,12 @@ ul li a:hover{
     margin-top: 17%;
     margin-bottom: 7%;
 }
-.servies .cat{
+
+.servies .cat {
     line-height: 5rem;
 }
-.servies p ,.top h5 {
+
+.servies p, .top h5 {
     color: #5E6282;
     font-size: 1.5rem;
     font-weight: bold;
@@ -261,10 +373,11 @@ ul li a:hover{
     text-transform: capitalize;
     font-weight: 700;
 }
-.top h3{
+
+.top h3 {
     font-size: 4rem;
     text-transform: capitalize;
-    font-weight: 600 
+    font-weight: 600
 }
 
 .servies img {
@@ -321,35 +434,43 @@ ul li a:hover{
     z-index: -1;
     transform: scaleX(0);
 }
-.with-shapes{
+
+.with-shapes {
     top: 60px;
     z-index: -1;
     position: relative;
     right: 60px;
 }
+
 .servies-category .cardservices:hover::before {
     transform: scaleX(1);
 }
 
 .topsell {
+    position: relative;
+    /* left: 50px; */
     margin-top: 8%;
     text-align: center;
     display: flex;
     justify-content: space-around;
+
 }
 
 .card-cell>img {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    width: 100%;
+    /* width: 100%; */
+    padding: 10px;
 }
-.inform h4:hover{
+
+.inform h4:hover {
     color: #F1A501;
 }
+
 .card-cell {
     background-color: #FFFEFE;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 1.5rem;
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
 
@@ -361,54 +482,64 @@ ul li a:hover{
     padding: 10px;
 }
 
+
 .data-sell {
     background-color: #FFFEFE;
     color: #212832;
     font-size: 14px;
     font-weight: 500;
+    border-radius: 2.5rem;
+    padding: 12px;
 }
+
 .trip {
     text-align: left;
     margin-left: 5px;
-  
+
 }
-.top{
+
+.top {
     text-align: center;
     line-height: 4rem;
     margin-top: 10%;
 }
-.setps{
+
+.setps {
     width: 85%;
     margin: auto;
 }
-.content{
+
+.content {
     display: flex;
-    justify-content: space-around;
-    
+    /* justify-content: space-around; */
+
 
     margin-top: 17%;
-    margin-bottom: 7%;
+  
 }
-.easy-fast h5{
-    color: #5E6282 ;
+
+.easy-fast h5 {
+    color: #5E6282;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.2;
 }
-.easy-fast h3{
+
+.easy-fast h3 {
     font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
     color: #000;
 }
-.easy-fast{
-    width: 48%;
-}
-.des img,.des2 img ,.des3 img{
+
+
+
+.des img, .des2 img, .des3 img {
 
     transform: translate(0px, 10px);
 }
-.disc-contain> .des{
+
+.disc-contain>.des {
     width: 50px;
     height: 50px;
     border-radius: 13px;
@@ -416,7 +547,8 @@ ul li a:hover{
     text-align: center;
     margin-right: 21px;
 }
-.des2{
+
+.des2 {
     width: 50px;
     height: 50px;
     border-radius: 13px;
@@ -424,7 +556,8 @@ ul li a:hover{
     text-align: center;
     margin-right: 21px;
 }
-.des3{
+
+.des3 {
     width: 50px;
     height: 50px;
     border-radius: 13px;
@@ -433,73 +566,86 @@ ul li a:hover{
     margin-right: 21px;
 
 }
-.disc-contain{
+
+.disc-contain {
     display: flex;
     margin-top: 15px;
 }
-.disc-contain  h5{
-    color: #5E6282 ;
-    font-weight: 700 ;
-    font-size: 1rem ;
+
+.disc-contain h5 {
+    color: #5E6282;
+    font-weight: 700;
+    font-size: 1rem;
 }
-.disc-contain p{
+
+.disc-contain p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #5E6282;
 }
 
-.card-trip .card{
-    
+.card-trip .card {
+
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     width: 350px;
     background-color: #FFFEFE;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 1.5rem;
     padding-bottom: 10px;
-   
+
 }
-.card> img{
-    border-radius: 2.5rem ;
-    margin-top: 0.5rem ;
-    width: 100% ;
+
+.card>img {
+    border-radius: 2.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
     padding: 15px;
-   
+
 }
-.card-trip >img{
+
+.card-trip>img {
     width: 100%;
     position: relative;
-    bottom: 61%;
-    left: 15%;
+    bottom: 72%;
+    left: 50%;
     z-index: -1;
 
 
 
 }
-.card-trip{
-   margin-left: 30%;
-   margin-top: 100px;
-    
-   
+
+.card-trip {
+    padding-left: 20%;
+    /* margin-top: 100px; */
+    width: 50%;
+    position: relative;
+    top: 13px;
+
+
 }
-.card h5{
+
+.card h5 {
     color: #000;
     font-weight: 700;
     font-size: 1.5rem;
 }
-.card p{
+
+.card p {
     color: #5E6282;
     font-weight: 500;
     font-size: 1rem;
 }
-.icon-group{
+
+.icon-group {
     display: flex;
     margin-left: 16px;
 }
-.icon-group div{
+
+.icon-group div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -507,15 +653,18 @@ ul li a:hover{
     border: rgb(241, 232, 232);
     margin: 10px;
 }
-.icon-card{
+
+.icon-card {
     margin: 9px;
-   
+
 }
-.footer-card{
-    margin-left: 20px ;
+
+.footer-card {
+    margin-left: 20px;
     display: flex;
 }
-.footer-card div{
+
+.footer-card div {
     padding-top: 11px;
     font-weight: 500;
     color: #5E6282;
@@ -523,9 +672,307 @@ ul li a:hover{
     justify-content: space-between;
     width: 100%;
 }
-.heart{
+
+.heart {
     bottom: 6px;
 
     position: relative;
     right: 20px;
+}
+.heart-card{
+    width: 260px;
+    border-radius: 18px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
+    height: 160px;
+    position: relative;
+    right: 80px;
+    top: 170px
+}
+.img-card >img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.body-card h5{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5E6282;
+}
+.body-card h6,.body-card p{
+    font-size: 400;
+    font-size: 16px;
+    color: black;
+}
+.body-card p span{
+    color: #111e8f;
+    font-weight: 400;
+    line-height: 1.2;
+}
+progress{
+    accent-color: #111e8f;
+}
+.heart-card{
+    display: none;
+}
+.buttons a{
+    margin-top: 10px;
+}
+.about-us{
+    margin: auto;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-around;
+    bottom: 90px;
+}
+
+
+.content-about >h5{
+    font-size: 1.3rem;
+    color: #5E6282 ;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.content-about >h3{
+    color: #181E4B;
+    font-size: 3.5rem;
+    font-weight: 700 ;
+    text-transform: capitalize;
+}
+.points {
+    display: flex;
+    margin-top: 50px;
+    
+}
+.points div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #c4c4c4 ;
+    border: none;
+    margin: 10px;
+}
+.about-card > .card-ab{
+width: 75%;
+    padding: 16px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5E6282;
+    background-color: #FFFEFE;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #FFFEFE;
+}
+.about-card > .card-ab >h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.about-card >img{
+    margin-left: -22px;
+    margin-bottom: -13px;
+}
+.about-card{
+        position: relative;
+    right: 0;
+    left: 11%;
+    z-index: 1;
+}
+.card2{
+    position: relative;
+    left: 68px;
+    bottom: 30%;
+    z-index: -1;
+    
+}
+
+.about-card >img{
+    width: 68px;
+    height: 68px;
+}
+.card3{
+    position: relative;
+    z-index: -2;
+    bottom: 63%;
+    left: 72px;
+}
+.updown{
+    margin-top: 11%
+}
+.content-images {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container-company{
+    margin-top: -20%;
+}
+.subs{
+        height: 320px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(223, 215, 249, 0.199);
+    border-radius: 129px 20px 20px 20px;
+    padding-top: 5rem ;
+    padding-bottom: 5rem ;
+    padding-right: 2.5rem ;
+    padding-left: 2.5rem ;
+
+font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5E6282;
+}
+.container-email{
+    margin-top: 12%;
+}
+.subs .img2{
+    bottom: 16px; 
+    position: relative;
+    top: -67px;
+    left: 41px;
+    right: 0;
+    width: 20%;
+}
+.subs .img1{
+    width: 20%;
+    top: 71px;
+    position: relative;
+    right: 0;
+    left: -42px;
+
+}
+.enteremail{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5E6282;
+}
+.container-email >.send{
+    position: absolute;
+    left: 86%;
+}
+.content-images img:hover{
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    border: none;
+    border-radius: 1rem;
+    /* width: 25%;
+    height: 30%; */
+    background-color: #FFFEFE;
+    background-clip: border-box;
+}
+.enteremail .container-em{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+
+}
+input{
+    border: none;
+}
+.input-email{
+    margin: 13px;
+    width: 90%;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    color: #39425D;
+    border: none;
+    font-size: 14px;
+}
+input::placeholder{
+    padding: 10px;
+    color: #39425D;
+}
+.container-em button{
+    margin-top: 11px;
+    height: 55px;
+    background-color:  #FF946D;
+    border: none;
+    border-radius: 0.625rem;
+    padding: 1rem 2.5rem;
+    color: white;
+    font-size: 1.2rem;
+
+}
+.container-em>button:hover{
+    background-color: #F1A501;
+    cursor: pointer;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+
+}
+footer ul li{
+    list-style: none;
+}
+footer ul{
+    display: block;
+}
+footer div h6 {
+    color: #5E6282;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 46px;
+
+}
+footer ul li a{
+    color: #5E6282;
+    font-weight: 500;
+
+}
+footer  div h2{
+    color: #080809;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 16px;
+    line-height: 4.5rem;
+}
+.back-icon{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFEFE;
+    border-radius: 50%;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
+}
+.back-icon img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+.icon-grou{display: flex;}
+.back-icon:hover{
+    background-image: linear-gradient(to top, #c01dc0, #d1c4ce);
+    cursor: pointer;
+
+}
+.parag-footer{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #5E6282;
 }
