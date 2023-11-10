@@ -482,6 +482,7 @@ ul li a:hover {
 }
 
 .card-cell>img {
+    width: 100%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     /* width: 400px; */
