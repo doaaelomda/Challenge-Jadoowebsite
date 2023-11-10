@@ -80,6 +80,13 @@ ul li a:hover {
         display: none;
     }
 
+    .book-container>.setps>.content>.heart-card {
+        display: block;
+        position: relative;
+        left: 13%;
+        top: -200px;
+    }
+
     .icon {
         display: block;
     }
@@ -96,33 +103,41 @@ ul li a:hover {
         display: none;
     }
 
-    .container-travel >.traval-enjoy,
-     .container-servies >.ser>.servies-category,
-     .top-container > .topsell,
-     .book-container >.setps >.content,.footer{
+    .container-travel>.traval-enjoy,
+    .container-servies>.ser>.servies-category,
+    .top-container>.topsell,
+    .book-container>.setps>.content, .footer {
         display: block;
         /* width: 100%; */
     }
-    .container-servies >.ser>.servies-category> .cardservices{
+
+    .container-servies>.ser>.servies-category>.cardservices {
         width: 100%;
         height: 165px;
     }
-  
-    .container-servies,.top-container{
+
+    .container-servies, .top-container {
         position: relative;
         left: 25%;
     }
-    .card-cell{
+
+    .card-cell {
         width: 100%;
         margin-bottom: 18px;
     }
-    .book-container >.setps{
+
+    .book-container>.setps {
         width: 100%;
     }
-    .book-container{
+
+    .book-container {
         position: relative;
         left: 35%;
     }
+    .container-people{
+        margin-left: 55px;
+    }
+
     .with-shapes {
         display: none;
     }
@@ -135,52 +150,56 @@ ul li a:hover {
         margin: auto;
     }
 
-    .book-container >.setps >.content >.card-trip {
+    .book-container>.setps>.content>.card-trip {
         margin-left: -24%;
         margin-top: 35px;
     }
-    .book-container >.setps >.content >.card-trip>img {
+
+    .book-container>.setps>.content>.card-trip>img {
         display: none;
     }
-    .container-people >.about-us{
+
+    .container-people>.about-us {
         display: block;
         margin: 35%;
     }
-    .container-people >.about-us .card2, .container-people >.about-us .card3{
+
+    .container-people>.about-us .card2, .container-people>.about-us .card3 {
         position: relative;
         right: 0;
         left: 7%;
         top: 14px;
         z-index: 1;
     }
-    .container-people >.about-us >.updown
-    {
-        display: none;
-    }
-    .container-company >.content-images{
+
+    .container-company>.content-images {
         display: grid
     }
-    .container-company >.content-images >img{
-            margin: 17px;
-    position: relative;
-    right: 0;
-    left: 45%;
-    z-index: 1;
+
+    .container-company>.content-images>img {
+        margin: 17px;
+        position: relative;
+        right: 0;
+        left: 45%;
+        z-index: 1;
     }
-    .container-email> .send{
+
+    .container-email>.send {
         display: none;
     }
-    .container-email > .subs{
+
+    .container-email>.subs {
         width: 100%;
         display: block;
     }
 
-    .container-email{
-            position: relative;
-    left: 25%;
+    .container-email {
+        position: relative;
+        left: 25%;
     }
-    
+
 }
+
 .container {
     display: inline-block;
     cursor: pointer;
@@ -224,18 +243,21 @@ ul li a:hover {
 
 }
 
-.card-cell>img:hover{
+.card-cell>img:hover {
     transform: scale(1.3);
     transition: all 1.2s ease-in;
 }
+
 .img-company {
     transition: transform 2s;
 }
-.container-servies,.top-container,.book-container{
-    width: 90%;
+
+.top-container, .book-container {
+    width: 85%;
     margin: auto;
     /* height: 550px; */
 }
+
 .img-company:hover {
 
     transform: translateX(-25%)
@@ -274,9 +296,11 @@ ul li a:hover {
     color: #5E6282;
     font-size: 15px;
 }
-.icon-grou >img:hover{
+
+.icon-grou>img:hover {
     cursor: pointer;
 }
+
 .parag {
 
     width: 77%;
@@ -447,8 +471,9 @@ ul li a:hover {
 }
 
 .topsell {
+    margin: auto;
     position: relative;
-    /* left: 50px; */
+    /* left: 81px; */
     margin-top: 8%;
     text-align: center;
     display: flex;
@@ -459,7 +484,7 @@ ul li a:hover {
 .card-cell>img {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    /* width: 100%; */
+    /* width: 400px; */
     padding: 10px;
 }
 
@@ -468,6 +493,7 @@ ul li a:hover {
 }
 
 .card-cell {
+    margin: 10px;
     background-color: #FFFEFE;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -505,17 +531,18 @@ ul li a:hover {
 }
 
 .setps {
-    width: 85%;
+
     margin: auto;
 }
 
 .content {
+    width: 85%;
     display: flex;
     /* justify-content: space-around; */
 
 
     margin-top: 17%;
-  
+
 }
 
 .easy-fast h5 {
@@ -679,7 +706,8 @@ ul li a:hover {
     position: relative;
     right: 20px;
 }
-.heart-card{
+
+.heart-card {
     width: 260px;
     border-radius: 18px;
     padding: 10px;
@@ -693,38 +721,46 @@ ul li a:hover {
     right: 80px;
     top: 170px
 }
-.img-card >img{
+
+.img-card>img {
     border-radius: 50%;
     margin-right: 10px;
 }
-.body-card h5{
+
+.body-card h5 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5;
     color: #5E6282;
 }
-.body-card h6,.body-card p{
+
+.body-card h6, .body-card p {
     font-size: 400;
     font-size: 16px;
     color: black;
 }
-.body-card p span{
+
+.body-card p span {
     color: #111e8f;
     font-weight: 400;
     line-height: 1.2;
 }
-progress{
+
+progress {
     accent-color: #111e8f;
 }
-.heart-card{
+
+.heart-card {
     display: none;
 }
-.buttons a{
+
+.buttons a {
     margin-top: 10px;
 }
-.about-us{
+
+.about-us {
     margin: auto;
-    width: 80%;
+    width: 85%;
 
     display: flex;
     justify-content: space-around;
@@ -732,33 +768,37 @@ progress{
 }
 
 
-.content-about >h5{
+.content-about>h5 {
     font-size: 1.3rem;
-    color: #5E6282 ;
+    color: #5E6282;
     font-weight: 600;
     line-height: 1.2;
 }
-.content-about >h3{
+
+.content-about>h3 {
     color: #181E4B;
     font-size: 3.5rem;
-    font-weight: 700 ;
+    font-weight: 700;
     text-transform: capitalize;
 }
+
 .points {
     display: flex;
     margin-top: 50px;
-    
+
 }
-.points div{
+
+.points div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #c4c4c4 ;
+    background-color: #c4c4c4;
     border: none;
     margin: 10px;
 }
-.about-card > .card-ab{
-width: 75%;
+
+.about-card>.card-ab {
+    width: 75%;
     padding: 16px;
     border-radius: 1rem;
     font-size: 1rem;
@@ -767,82 +807,94 @@ width: 75%;
     color: #5E6282;
     background-color: #FFFEFE;
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid #FFFEFE;
 }
-.about-card > .card-ab >h5{
+
+.about-card>.card-ab>h5 {
     font-size: 1.5rem;
     font-weight: 600;
 }
-.about-card >img{
+
+.about-card>img {
     margin-left: -22px;
     margin-bottom: -13px;
 }
-.about-card{
-        position: relative;
-    right: 0;
-    left: 11%;
+
+#card1 {
+
     z-index: 1;
 }
-.card2{
-    position: relative;
-    left: 68px;
-    bottom: 30%;
+
+#card2 {
+
     z-index: -1;
-    
+
 }
 
-.about-card >img{
+.about-card>img {
     width: 68px;
     height: 68px;
 }
-.card3{
-    position: relative;
+
+#card3 {
     z-index: -2;
-    bottom: 63%;
-    left: 72px;
 }
-.updown{
+
+.updown {
     margin-top: 11%
 }
+
+.content-about {
+    width: 100%;
+}
+
 .content-images {
-    width: 90%;
+    width: 92%;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
-.container-company{
-    margin-top: -20%;
+
+.container-people {
+    margin-top: -10%;
 }
-.subs{
-        height: 320px;
+
+.container-company {
+    margin-top: 10%;
+}
+
+.subs {
+    height: 320px;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 87%;
     margin: auto;
     background-color: rgba(223, 215, 249, 0.199);
     border-radius: 129px 20px 20px 20px;
-    padding-top: 5rem ;
-    padding-bottom: 5rem ;
-    padding-right: 2.5rem ;
-    padding-left: 2.5rem ;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 
-font-size: 1rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #5E6282;
 }
-.container-email{
+
+.container-email {
     margin-top: 12%;
 }
-.subs .img2{
-    bottom: 16px; 
+
+.subs .img2 {
+    bottom: 16px;
     position: relative;
     top: -67px;
     left: 41px;
     right: 0;
     width: 20%;
 }
-.subs .img1{
+
+.subs .img1 {
     width: 20%;
     top: 71px;
     position: relative;
@@ -850,37 +902,46 @@ font-size: 1rem;
     left: -42px;
 
 }
-.enteremail{
+
+.enteremail {
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #5E6282;
 }
-.container-email >.send{
+
+.container-email>.send {
     position: absolute;
     left: 86%;
 }
-.content-images img:hover{
+
+.content-images img {
+    transition: all 0.3s ease;
+}
+
+.content-images img:hover {
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
     padding: 40px;
     border: none;
     border-radius: 1rem;
-    /* width: 25%;
-    height: 30%; */
     background-color: #FFFEFE;
     background-clip: border-box;
+    cursor: pointer;
 }
-.enteremail .container-em{
+
+.enteremail .container-em {
     display: flex;
     justify-content: space-around;
     margin-top: 7%;
 
 }
-input{
+
+input {
     border: none;
 }
-.input-email{
+
+.input-email {
     margin: 13px;
     width: 90%;
     font-weight: 400;
@@ -893,14 +954,16 @@ input{
     border: none;
     font-size: 14px;
 }
-input::placeholder{
+
+input::placeholder {
     padding: 10px;
     color: #39425D;
 }
-.container-em button{
+
+.container-em button {
     margin-top: 11px;
     height: 55px;
-    background-color:  #FF946D;
+    background-color: #FF946D;
     border: none;
     border-radius: 0.625rem;
     padding: 1rem 2.5rem;
@@ -908,12 +971,14 @@ input::placeholder{
     font-size: 1.2rem;
 
 }
-.container-em>button:hover{
+
+.container-em>button:hover {
     background-color: #F1A501;
     cursor: pointer;
-    
+
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -921,33 +986,39 @@ footer{
     margin-top: 10%;
 
 }
-footer ul li{
+
+footer ul li {
     list-style: none;
 }
-footer ul{
+
+footer ul {
     display: block;
 }
+
 footer div h6 {
     color: #5E6282;
     font-weight: 500;
     font-size: 1rem;
     line-height: 2rem;
-    margin-top: 46px;
+    margin-top: 29px;
 
 }
-footer ul li a{
+
+footer ul li a {
     color: #5E6282;
     font-weight: 500;
 
 }
-footer  div h2{
+
+footer div h2 {
     color: #080809;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 16px;
     line-height: 4.5rem;
 }
-.back-icon{
+
+.back-icon {
     margin: 10px;
     width: 50px;
     height: 50px;
@@ -955,24 +1026,34 @@ footer  div h2{
     border-radius: 50%;
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
 }
-.back-icon img{
+
+.back-icon img {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin: 15px;
 
 }
-.icon-grou{display: flex;}
-.back-icon:hover{
+
+.icon-grou {
+    display: flex;
+}
+
+.back-icon:hover {
     background-image: linear-gradient(to top, #c01dc0, #d1c4ce);
     cursor: pointer;
 
 }
-.parag-footer{
+
+.parag-footer {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 30px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #5E6282;
+}
+
+.logo2 {
+    padding-top: 21px;
 }
