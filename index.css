@@ -21,12 +21,15 @@ header {
     left: 0;
     width: 100%;
     margin: auto;
+    background-color: transparent;
+    z-index: 100;
 
 }
 
 header.scroll {
     padding: 20px;
-    background-color: #F1A501;
+    background-image: none;
+    background-color: rgb(249, 250, 253);
     width: 100%;
     transform: translate(0, 0);
     display: flex;
@@ -50,7 +53,7 @@ ul li a {
 
 .sign-up {
 
-    width: 120px;
+   width: 130px;;
     border-radius: 4px;
     text-align: center;
     border: 1px solid #000;
@@ -62,15 +65,26 @@ ul select {
     background-color: rgba(0, 0, 0, 0);
 }
 
-ul li a:hover {
+ul li a:hover{
     color: #DF6951;
 }
 
 .sign-up:hover {
     cursor: pointer;
-    background-color: #F1A501;
+    background-color: black;
+    color: #FFFEFE;
 }
-
+.sign-up>button{
+    border: 0;
+    background: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: #212832;
+    font-weight: 500;
+}
+.sign-up>button:hover{
+    color: #FFFEFE;
+}
 .icon {
     display: none;
 }
@@ -80,6 +94,9 @@ ul li a:hover {
         display: none;
     }
 
+.container-travel > .traval-enjoy .img-company{
+display:none
+}
     .book-container>.setps>.content>.heart-card {
         display: block;
         position: relative;
@@ -113,7 +130,7 @@ ul li a:hover {
 
     .container-servies>.ser>.servies-category>.cardservices {
         width: 100%;
-        height: 165px;
+   
     }
 
     .container-servies, .top-container {
@@ -151,7 +168,7 @@ ul li a:hover {
     }
 
     .book-container>.setps>.content>.card-trip {
-        margin-left: -24%;
+        margin-left: -9%;
         margin-top: 35px;
     }
 
@@ -175,6 +192,12 @@ ul li a:hover {
     .container-company>.content-images {
         display: grid
     }
+    .book-container .heart-card{
+        right: -57px;
+        display: block;
+        top: 56rem;
+        position: absolute;
+    }
 
     .container-company>.content-images>img {
         margin: 17px;
@@ -196,6 +219,11 @@ ul li a:hover {
     .container-email {
         position: relative;
         left: 25%;
+    }
+    header{
+        justify-content: space-between;
+    position: fixed;
+    top: -16px;
     }
 
 }
@@ -227,10 +255,13 @@ ul li a:hover {
 
 
 .traval-enjoy {
+    position: relative;
+    /* top: 54px; */
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    top: 100px;
 
 }
 
@@ -239,12 +270,11 @@ ul li a:hover {
     background-image: url(assets/images/hero-bg.svg);
     background-color: transparent;
     position: relative;
-    top: 100px;
 
 }
 
 .card-cell>img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 1.2s ease-in;
 }
 
@@ -287,7 +317,7 @@ ul li a:hover {
 .traval h1>img {
     position: absolute;
     top: 35%;
-    left: 25%;
+    left: 21%;
     z-index: -1;
 }
 
@@ -317,26 +347,28 @@ ul li a:hover {
     border-color: #F1A501;
     border-radius: 8px;
     font-size: 1.6rem;
-    border-radius: 0.5rem;
-    padding: 10px;
-
+    border-radius: 12px;
+    padding: 14px;
     text-align: center;
+    transition:background-color 2s
 
 }
 
 .find:hover {
     background-color: #DF6951;
     cursor: pointer;
-    border: none;
+    border: #DF6951;
+    padding: 16px;
 }
 
 .buttons .playvideo {
-    margin: 10px;
+    margin: 16px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     background-color: #DF6951;
     border-color: #DF6951;
+    transition: width 1s,height 1s,background-color 1s,padding 1s;
 
 }
 
@@ -348,16 +380,22 @@ ul li a:hover {
     color: #5E6282;
     font-size: 22px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 25px;
     transition: transform 2s;
 
 
 }
 
-.video-show:hover, .demo:hover {
+.demo:hover {
     color: #F1A501;
     cursor: pointer;
-    transform: translate(50%, 0);
+    transform: translate(50%, 0%);
+}
+.playvideo:hover{
+    width: 60px;
+    height: 60px;
+    background-color:#F1A501;
+    padding: 5px;
 }
 
 .top-container {
@@ -416,7 +454,9 @@ ul li a:hover {
 }
 
 .servies-category .cardservices {
-    width: 10%;
+    padding: 60px;
+    width: 270px;
+
 
 }
 
@@ -433,13 +473,13 @@ ul li a:hover {
 
 .servies-category .cardservices {
     position: relative;
-    transition: all 0.2s ease-in-out;
+    /* transition: all 0.2s ease-in-out; */
 }
 
 .servies-category .cardservices:hover {
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
     border-radius: 3rem;
-    width: 17%;
+    /* width: 17%; */
     border: none;
     background-color: #FFFEFE;
     background-clip: border-box;
@@ -489,11 +529,13 @@ ul li a:hover {
     padding: 10px;
 }
 
+
 .inform h4:hover {
     color: #F1A501;
 }
 
 .card-cell {
+    overflow: hidden;
     margin: 10px;
     background-color: #FFFEFE;
     background-clip: border-box;
@@ -507,6 +549,10 @@ ul li a:hover {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    color: #5E6282
+}
+.trip span{
+    color: #5E6282
 }
 
 
@@ -521,7 +567,7 @@ ul li a:hover {
 
 .trip {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 13px;
 
 }
 
@@ -534,6 +580,7 @@ ul li a:hover {
 .setps {
 
     margin: auto;
+    display: flex;
 }
 
 .content {
@@ -647,11 +694,7 @@ ul li a:hover {
 }
 
 .card-trip {
-    padding-left: 20%;
-    /* margin-top: 100px; */
-    width: 50%;
-    position: relative;
-    top: 13px;
+    margin-left: 100px;
 
 
 }
@@ -709,23 +752,32 @@ ul li a:hover {
 }
 
 .heart-card {
+    top: 160rem;
     width: 260px;
     border-radius: 18px;
-    padding: 10px;
+    padding: 16px;
     border: none;
     background-color: white;
     display: flex;
     justify-content: space-around;
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
-    height: 160px;
-    position: relative;
-    right: 80px;
-    top: 170px
+ 
+    position: absolute;
+    right: 180px;
 }
 
 .img-card>img {
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
+}
+.img-card h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #5E6282;
+
 }
 
 .body-card h5 {
@@ -799,7 +851,6 @@ progress {
 }
 
 .about-card>.card-ab {
-    width: 75%;
     padding: 16px;
     border-radius: 1rem;
     font-size: 1rem;
@@ -811,8 +862,9 @@ progress {
 }
 
 .about-card>.card-ab>h5 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    padding-top: 33px;
 }
 
 .about-card>img {
@@ -841,7 +893,8 @@ progress {
 }
 
 .updown {
-    margin-top: 11%
+    margin-top: 11%;
+    margin-left: 26px;
 }
 
 .content-about {
@@ -913,22 +966,26 @@ progress {
 }
 
 .container-email>.send {
-    position: absolute;
-    left: 86%;
+    top: 53px;
+    position: relative;
+    left: 90%;
 }
 
 .content-images img {
     transition: all 0.3s ease;
+    filter: grayscale(1);
+    width: 150px;
 }
 
 .content-images img:hover {
     box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.25);
-    padding: 40px;
+    padding: 20px;
     border: none;
     border-radius: 1rem;
     background-color: #FFFEFE;
     background-clip: border-box;
     cursor: pointer;
+    filter: grayscale(0);
 }
 
 .enteremail .container-em {
@@ -1041,7 +1098,8 @@ footer div h2 {
 }
 
 .back-icon:hover {
-    background-image: linear-gradient(to top, #c01dc0, #d1c4ce);
+   background-image: conic-gradient(#c01dc0 45deg, #d1c4ce  210deg, #eb51eb 180deg);
+    /* background-image: linear-gradient(to top, #c01dc0, #d1c4ce); */
     cursor: pointer;
 
 }

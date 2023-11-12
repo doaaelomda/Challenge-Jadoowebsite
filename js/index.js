@@ -6,11 +6,9 @@ function myFunction(x) {
   var header = document.querySelector("header");
   bar2.style.opicty = "1";
   topnav.style.display = topnav.style.display === "block" ? "none" : "block";
-  topnav.style.backgroundColor = "#F1A501";
   header.style.display =
     header.style.display === "inline-block" ? "flex" : "inline-block";
-  header.style.backgroundColor =
-    header.style.backgroundColor === "#F1A501" ? "#F1A501" : "#F1A501";
+    header.style.backgroundColor ="rgb(249, 250, 253)" ;
   let container = document.querySelector(".container");
   container.style.cssText = "position: fixed; right: 0; top: 11px;";
 }
