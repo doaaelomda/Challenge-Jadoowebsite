@@ -7,6 +7,7 @@ function myFunction(x) {
   bar2.style.opicty = "1";
   topnav.style.display = topnav.style.display === "block" ? "none" : "block";
   header.style.display =
+  header.style.padding="20px"
     header.style.display === "inline-block" ? "flex" : "inline-block";
     header.style.backgroundColor ="rgb(249, 250, 253)" ;
   let container = document.querySelector(".container");
