@@ -34,6 +34,7 @@ header.scroll {
     transform: translate(0, 0);
     display: flex;
     justify-content: space-around;
+    top: 0;
 
 }
 
@@ -51,14 +52,6 @@ ul li a {
     padding: 10px;
 }
 
-.sign-up {
-
-   width: 130px;;
-    border-radius: 4px;
-    text-align: center;
-    border: 1px solid #000;
-
-}
 
 ul select {
     border: none;
@@ -69,10 +62,11 @@ ul li a:hover{
     color: #DF6951;
 }
 
-.sign-up:hover {
+.sign-up button:hover {
     cursor: pointer;
     background-color: black;
-    color: #FFFEFE;
+    color: white;
+   
 }
 .sign-up>button{
     border: 0;
@@ -81,10 +75,15 @@ ul li a:hover{
     text-decoration: none;
     color: #212832;
     font-weight: 500;
+    width: 130px;;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #000;
+    height: 33px;
 }
-.sign-up>button:hover{
+/* .sign-up>button:hover{
     color: #FFFEFE;
-}
+} */
 .icon {
     display: none;
 }
@@ -99,15 +98,20 @@ display:none
 }
     .book-container>.setps>.content>.heart-card {
         display: block;
-        position: relative;
-        left: 13%;
+        /* position: relative;
+        left: 13%; */
         top: -200px;
     }
 
     .icon {
         display: block;
     }
-
+    .container-travel > .traval-enjoy >.traval {
+        padding: 0;
+    }
+    .container-servies > .ser >.servies p{
+        padding-top: 35px;
+    }
     * {
         font-size: 12px;
     }
@@ -126,7 +130,14 @@ display:none
     .book-container>.setps>.content, .footer {
         display: block;
         /* width: 100%; */
+       
+     
     }
+
+    .container-servies>.ser>.servies-category{
+             margin: 33px;
+    }
+
 
     .container-servies>.ser>.servies-category>.cardservices {
         width: 100%;
@@ -134,12 +145,12 @@ display:none
     }
 
     .container-servies, .top-container {
-        position: relative;
-        left: 25%;
+        /* position: relative;
+        left: 25%; */
     }
 
     .card-cell {
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 18px;
     }
 
@@ -148,11 +159,11 @@ display:none
     }
 
     .book-container {
-        position: relative;
-        left: 35%;
+        /* position: relative;
+        left: 35%; */
     }
     .container-people{
-        margin-left: 55px;
+        /* margin-left: 55px; */
     }
 
     .with-shapes {
@@ -178,7 +189,7 @@ display:none
 
     .container-people>.about-us {
         display: block;
-        margin: 35%;
+        margin-top: 35%;
     }
 
     .container-people>.about-us .card2, .container-people>.about-us .card3 {
@@ -190,20 +201,22 @@ display:none
     }
 
     .container-company>.content-images {
-        display: grid
+        display: grid;
+    justify-content: start;
+    margin-left: 22px;
     }
     .book-container .heart-card{
-        right: -57px;
+        right: 0;
         display: block;
-        top: 56rem;
+        top: 324rem;
         position: absolute;
     }
 
     .container-company>.content-images>img {
         margin: 17px;
-        position: relative;
+        /* position: relative;
         right: 0;
-        left: 45%;
+        left: 45%; */
         z-index: 1;
     }
 
@@ -217,11 +230,11 @@ display:none
     }
 
     .container-email {
-        position: relative;
-        left: 25%;
+        /* position: relative;
+        left: 25%; */
     }
     header{
-        justify-content: space-between;
+        /* justify-content: space-between; */
     position: fixed;
     top: -16px;
     }
@@ -389,7 +402,7 @@ display:none
 .demo:hover {
     color: #F1A501;
     cursor: pointer;
-    transform: translate(50%, 0%);
+    transform: translate(20%, 0%);
 }
 .playvideo:hover{
     width: 60px;
@@ -473,7 +486,7 @@ display:none
 
 .servies-category .cardservices {
     position: relative;
-    /* transition: all 0.2s ease-in-out; */
+    transition: all 0.2s ease-in-out;
 }
 
 .servies-category .cardservices:hover {
@@ -497,6 +510,7 @@ display:none
     border-radius: 2rem 0 1rem 0;
     z-index: -1;
     transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
 }
 
 .with-shapes {
@@ -753,7 +767,7 @@ display:none
 
 .heart-card {
     top: 160rem;
-    width: 260px;
+    width: 266px;
     border-radius: 18px;
     padding: 16px;
     border: none;
@@ -1011,8 +1025,17 @@ input {
     color: #39425D;
     border: none;
     font-size: 14px;
+    border: 1px solid #ddd;
+    background: url(assets/icons/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
 }
-
+.input-email::placeholder{
+  padding: 40px;
+}
+.input-email:focus{
+    border: 1px solid #ddd;
+}
 input::placeholder {
     padding: 10px;
     color: #39425D;
@@ -1097,10 +1120,20 @@ footer div h2 {
     display: flex;
 }
 
-.back-icon:hover {
+.icon2:hover {
    background-image: conic-gradient(#c01dc0 45deg, #d1c4ce  210deg, #eb51eb 180deg);
     /* background-image: linear-gradient(to top, #c01dc0, #d1c4ce); */
     cursor: pointer;
+
+}
+.icon1:hover {
+    cursor: pointer;
+    background-image: conic-gradient(#3b5998 45deg, #3b5998  210deg, #3b5998 180deg);
+}
+.icon3:hover{
+
+    cursor: pointer;
+    /* background-image: conic-gradient(#00acee 45deg, #00acee  210deg, #00acee 180deg); */
 
 }
 
